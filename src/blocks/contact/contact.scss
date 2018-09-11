@@ -1,0 +1,37 @@
+@import "../variables";
+
+.contact {
+  width: 100%;
+  height: 975px;
+  position: relative;
+
+  &__title {
+    color: #2b2b2b;
+    padding: 34px 0 30px 0;
+    margin: 0;
+  }
+
+  &__form {
+    height: 630px;
+    background-color: var(--color-grey);
+    padding: 0 20px;
+  }
+
+  @media screen and (min-width: $screen-t) {
+    height: 720px;
+
+    &__content {
+      width: $screen-t;
+      position: absolute;
+      left: 0;
+      top: 0;
+    }
+
+    &__form {
+      position: absolute;
+      height: 600px;
+      top: 48px;
+      right: 0;
+    }
+  }
+}

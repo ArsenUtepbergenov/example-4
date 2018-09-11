@@ -1,0 +1,28 @@
+.card {
+  width: 280px;
+  height: 380px;
+  background-color: white;
+  border-radius: 3px;
+  box-shadow: 0px 2px 3px 1px #b9b9b9;
+
+  &__img {
+    padding: 35px 0 15px 0;
+    display: flex;
+  }
+
+  &__img img {
+    width: 185px;
+    height: 200px;
+    margin: auto;
+  }
+
+  &__title {
+    color: var(--color-blue);
+    padding-left: 15px;
+  }
+
+  &__price {
+    color: var(--color-dark);
+    padding-left: 15px;
+  }
+}

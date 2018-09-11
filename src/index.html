@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+  <link rel="stylesheet" href="./styles/normalize.css">
+  <link rel="stylesheet" href="./styles/bundle.min.css">
+  <title>Veniam</title>
+</head>
+<body>
+  <div class="layout">
+    <header class="header">
+      <div class="header__content">
+        <div class="header__logo">
+          <div class="logo"></div>
+          <button type="button" class="button button--nav button--dark">
+            <i class="fas fa-bars fa-lg"></i>
+          </button>
+        </div>
+        <div class="header__buttons">
+          <button type="button" class="button button--blue">Перезвоните мне</button>
+          <button type="button" class="button button--blue">Оставить заявку</button>
+        </div>
+        <div class="hr header__hr"></div>
+        <div class="header__catalog">
+          <button type="button" class="button button--catalog button--dark">Каталог продукции</button>
+          <nav class="navbar catalog__item navbar--hidden">
+            <ul class="navbar__items">
+              <li><a href="#" class="navbar__link">Пункт №1</a></li>
+              <li><a href="#" class="navbar__link">Пункт №2</a></li>
+              <li><a href="#" class="navbar__link">Пункт №3</a></li>
+              <li><a href="#" class="navbar__link">Пункт №4</a></li>
+              <li><a href="#" class="navbar__link">Пункт №5</a></li>
+              <li><a href="#" class="navbar__link">Пункт №6</a></li>
+              <li><a href="#" class="navbar__link">Пункт №7</a></li>
+              <li><a href="#" class="navbar__link">Пункт №8</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+      <nav class="navbar header__navbar navbar--hidden">
+        <h2 class="footer__title navbar__title">
+          <i class="far fa-times-circle fa-lg navbar__close"></i>
+        </h2>
+        <ul class="navbar__items">
+          <li><a href="#" class="navbar__link">О компании</a></li>
+          <li><a href="#" class="navbar__link">Каталог</a></li>
+          <li><a href="#" class="navbar__link">Доставка и оплата</a></li>
+          <li><a href="#" class="navbar__link">Отзывы</a></li>
+          <li><a href="#" class="navbar__link">Новости</a></li>
+          <li><a href="#" class="navbar__link">Статьи</a></li>
+          <li><a href="#" class="navbar__link">Фотогалерея</a></li>
+          <li><a href="#" class="navbar__link">Контакты</a></li>
+        </ul>
+      </nav>
+      <div class="slideshow header__slider">
+        <div class="slideshow__arrow slideshow--left"><</div>
+        <div class="slideshow__arrow slideshow--right">></div>
+        <div class="slideshow__slide slideshow--slide-1">
+          <div class="slideshow__content">
+            <p>Найдите новую одежду</p>
+            <span>Обновите ваш гардероб к новому сезону!</span>
+          </div>
+        </div>
+        <div class="slideshow__slide slideshow--slide-2">
+          <div class="slideshow__content">
+            <p>Потеряйте новую одежду</p>
+            <span>Обновите ваш гардероб к новому сезону!</span>
+          </div>
+        </div>
+        <div class="slideshow__slide slideshow--slide-3">
+          <div class="slideshow__content">
+            <p>Найдите новую одежду</p>
+            <span>Обновите ваш гардероб к новому сезону!</span>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main class="main">
+      <section class="catalog">
+        <div class="catalog__content">
+
+        </div>
+        <div class="hr"></div>
+      </section>
+      <section class="heading">
+        <div class="heading__content">
+          <h1>Заголовок H1</h1>
+          <div class="heading__cover">
+            <img class="heading__img heading--star" src="./assets/star.png" alt="star">
+            <img class="heading__img heading--circle" src="./assets/circle.png" alt="circle">
+            <img class="heading__img heading--rect" src="./assets/rect.png" alt="rect">
+            <img class="heading__img heading--girl" src="./assets/girl.png" alt="girl">
+          </div>
+          <article class="article">
+            Интернет-магазин одежды Stylecloth – это доступные цены, широкий, регулярно обновляемый ассортимент.
+            В онлайн-каталоге Stylecloth представлено около 7000 ведущих брендов женской, мужской и детской одежды и обуви, электроники,
+            книжной продукции, ювелирных изделий, игрушек и т.д. Для удобства пользования онлайн-каталог поделен на разделы, все товары можно сортировать по ряду критериев:
+            цена, материал изготовления, сезонность, бренд.
+          </article>
+          <article class="article article--hiding">
+            Интернет-магазин Stylecloth регулярно проводит масштабные распродажи, в рамках которых купить одежду и обувь становится еще реальнее.
+            Чтобы быть в курсе предстоящих скидок или появления в ассортименте новых моделей одежды от любимых брендов, достаточно подписаться на email-рассылку магазина.
+            Дополнительные выгодные условия действуют для постоянных покупателей Wildberries – персональная скидка, зависящая от процента выкупа вещей.
+          </article>
+          <button type="button" class="button heading__button button--light">Смотреть полностью</button>
+        </div>
+      </section>
+      <section class="bestsellers">
+        <div class="bestsellers__content">
+          <h2 class="bestsellers__title">Хиты продаж</h2>
+          <div class="slider">
+            <div class="slider__arrow slider--left"><</div>
+            <div class="slider__arrow slider--right">></div>
+            <div class="slider__slide">
+              <div class="slider__content">
+                <div class="card">
+                  <div class="card__img">
+                    <img src="./assets/hit-1.png" alt="hit-1">
+                  </div>
+                  <div class="hr"></div>
+                  <p class="card__title">Футболка с эффектом разрывов</p>
+                  <p class="card__price">5999 <i class="fas fa-ruble-sign"></i></p>
+                </div>
+              </div>
+            </div>
+            <div class="slider__slide">
+              <div class="slider__content">
+                <div class="card">
+                  <div class="card__img">
+                    <img src="./assets/hit-2.png" alt="hit-2">
+                  </div>
+                  <div class="hr"></div>
+                  <p class="card__title">Плотная рубашка из эластичной джинсовой ткани</p>
+                  <p class="card__price">5999 <i class="fas fa-ruble-sign"></i></p>
+                </div>
+              </div>
+            </div>
+            <div class="slider__slide">
+              <div class="slider__content">
+                <div class="card">
+                  <div class="card__img">
+                    <img src="./assets/hit-3.png" alt="hit-3">
+                  </div>
+                  <div class="hr"></div>
+                  <p class="card__title">Футболка с заклепками</p>
+                  <p class="card__price">5999 <i class="fas fa-ruble-sign"></i></p>
+                </div>
+              </div>
+            </div>
+            <div class="slider__slide">
+              <div class="slider__content">
+                <div class="card">
+                  <div class="card__img">
+                    <img src="./assets/hit-2.png" alt="hit-4">
+                  </div>
+                  <div class="hr"></div>
+                  <p class="card__title">Плотная рубашка из эластичной джинсовой ткани</p>
+                  <p class="card__price">5999 <i class="fas fa-ruble-sign"></i></p>
+                </div>
+              </div>
+            </div>
+            <div class="slider__slide">
+              <div class="slider__content">
+                <div class="card">
+                  <div class="card__img">
+                    <img src="./assets/hit-1.png" alt="hit-5">
+                  </div>
+                  <div class="hr"></div>
+                  <p class="card__title">Футболка с эффектом разрывов</p>
+                  <p class="card__price">5999 <i class="fas fa-ruble-sign"></i></p>
+                </div>
+              </div>
+            </div>
+            <div class="slider__dots">
+              <div class="slider__dot"></div>
+              <div class="slider__dot"></div>
+              <div class="slider__dot"></div>
+              <div class="slider__dot"></div>
+              <div class="slider__dot"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="contact">
+        <div id="map" class="map"></div>
+        <div class="contact__content">
+          <div class="contact__form">
+            <h2 class="contact__title">Связаться с нами</h2>
+            <form class="form" action="index.html" method="post">
+              <div class="form__inputs">
+                <input type="text" class="form__input" placeholder="Ваше имя">
+                <input type="tel" class="form__input" value="+7">
+                <input type="mail" class="form__input" placeholder="Электронная почта">
+              </div>
+              <textarea class="form__textarea" placeholder="Текст сообщения"></textarea>
+              <div class="form__checkboxs">
+                <label class="checkbox">Согласен с <a href="#" class="form__link">политикой конфиденциальности</a>
+                  <input type="checkbox" checked>
+                  <span class="checkbox__checkmark"></span>
+                </label>
+              </div>
+              <button type="submit" class="button button--blue">Отправить</button>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="footer__content">
+        <div class="footer__menu">
+          <h2 class="footer__title">Компания</h2>
+          <nav class="navbar">
+            <ul class="navbar__items">
+              <li><a href="#" class="navbar__link">О компании<i class="fas fa-angle-right navbar__icon"></i></a></li>
+              <li><a href="#" class="navbar__link">Каталог<i class="fas fa-ellipsis-v navbar__icon"></i></a></li>
+              <li><a href="#" class="navbar__link">Доставка и оплата<i class="fas fa-angle-right navbar__icon"></i></a></li>
+              <li><a href="#" class="navbar__link">Отзывы<i class="fas fa-angle-right navbar__icon"></i></a></li>
+              <li><a href="#" class="navbar__link">Новости<i class="fas fa-angle-right navbar__icon"></i></a></li>
+              <li><a href="#" class="navbar__link">Статьи<i class="fas fa-angle-right navbar__icon"></i></a></li>
+              <li><a href="#" class="navbar__link">Фотогалерея<i class="fas fa-angle-right navbar__icon"></i></a></li>
+              <li><a href="#" class="navbar__link">Контакты<i class="fas fa-angle-right navbar__icon"></i></a></li>
+            </ul>
+          </nav>
+        </div>
+        <div class="footer__buttons">
+          <button type="button" class="button footer__button button--catalog button--dark">Каталог продукции</button>
+          <nav class="navbar footer__catalog catalog__item navbar--hidden">
+            <ul class="navbar__items">
+              <li><a href="#" class="navbar__link">Пункт №1</a></li>
+              <li><a href="#" class="navbar__link">Пункт №2</a></li>
+              <li><a href="#" class="navbar__link">Пункт №3</a></li>
+              <li><a href="#" class="navbar__link">Пункт №4</a></li>
+              <li><a href="#" class="navbar__link">Пункт №5</a></li>
+              <li><a href="#" class="navbar__link">Пункт №6</a></li>
+              <li><a href="#" class="navbar__link">Пункт №7</a></li>
+              <li><a href="#" class="navbar__link">Пункт №8</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div class="footer__info">
+          <div class="footer__logo">
+            <div class="logo"></div>
+          </div>
+          <div class="footer__infoboxes">
+            <div class="infobox">
+              <div class="infobox__icon">
+                <i class="fas fa-phone-volume fa-2x"></i>
+              </div>
+              <div class="infobox__text">
+                <span>+7 (000) 000-00-00</span>
+                <span>+7 (000) 000-00-00</span>
+              </div>
+            </div>
+            <div class="infobox">
+              <div class="infobox__icon">
+                <i class="far fa-clock fa-2x"></i>
+              </div>
+              <div class="infobox__text">
+                <span>Пн-Пт: с 0:00 до 0:00</span>
+                <span>Сб-Вс: Выходные</span>
+              </div>
+            </div>
+            <div class="infobox">
+              <div class="infobox__icon">
+                <i class="fas fa-map-marker-alt fa-2x"></i>
+              </div>
+              <div class="infobox__text">
+                <span>000000, Рыбная обл., г. Рыба, ул. Рыба,</span>
+                <span>дом 00, к. 00  <a href="#" class="form__link">Карта проезда</a></span>
+              </div>
+            </div>
+          </div>
+          <div class="hr"></div>
+          <div class="social-icons">
+            <div class="social-icons__circle">
+              <i class="fab fa-vk social-icons__icon social-icons--vk"></i>
+            </div>
+            <div class="social-icons__circle">
+              <i class="fab fa-twitter social-icons__icon social-icons--twitter"></i>
+            </div>
+            <div class="social-icons__circle">
+              <i class="fab fa-facebook-f social-icons__icon social-icons--facebook"></i>
+            </div>
+            <div class="social-icons__circle">
+              <i class="fab fa-google-plus-g social-icons__icon social-icons--google-plus"></i>
+            </div>
+            <div class="social-icons__circle">
+              <i class="fab fa-instagram social-icons__icon social-icons--instagram"></i>
+            </div>
+          </div>
+          <p class="footer__text">
+             Создание и продвижение сайта <a href="#" class="form__link">Darvin Studio</a><br>
+             <a href="#" class="form__link">Политика конфиденциальности</a><br>
+             <i class="far fa-copyright"></i> 2017. Все права защищены
+           </p>
+        </div>
+      </div>
+    </footer>
+  </div>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDRHNA7p1ipb4pQSZh_TdoYj35--BfCBrk&callback=initMap" async defer></script>
+  <script type="text/javascript" src="./scripts/bundle.min.js"></script>
+</body>
+</html>

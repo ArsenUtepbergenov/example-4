@@ -1,0 +1,19 @@
+@import "../variables";
+
+.article {
+  padding-bottom: 8px;
+
+  &--hiding {
+    display: none;
+  }
+
+  &--show {
+    display: block;
+  }
+
+  @media screen and (min-width: $screen-t) {
+    &--hiding {
+      display: block;
+    }
+  }
+}

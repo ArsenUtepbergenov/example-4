@@ -1,0 +1,21 @@
+@import "../variables";
+
+.catalog {
+  height: 270px;
+  background-color: white;
+  display: none;
+
+  &__content {
+    margin: auto;
+  }
+
+  &__item {
+    position: absolute;
+    z-index: 3;
+    width: 100%;
+  }
+
+  @media screen and (min-width: $screen-t) {
+    display: block;
+  }
+}

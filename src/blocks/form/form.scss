@@ -1,0 +1,51 @@
+@import "../mixins";
+
+.form {
+  width: 100%;
+
+  &__inputs {
+    @include flexbox(column);
+    margin-bottom: 30px;
+  }
+
+  &__link {
+    color: var(--color-blue);
+  }
+
+  &__checkboxs {
+    margin: 20px 0 30px 0;
+  }
+
+  &__input {
+    height: 44px;
+  }
+
+  &__textarea {
+    height: 186px;
+    resize: none;
+    padding-top: 15px;
+  }
+
+  &__input, &__textarea {
+    border: 1px solid #c3c3c3;
+    border-radius: 5px;
+    width: 100%;
+    padding-left: 15px;
+    box-sizing: border-box;
+    cursor: pointer;
+  }
+
+  &__checkbox-wrap {
+    background-color: var(--color-blue);
+  }
+
+  &__checkbox {
+    width: 17px;
+    height: 17px;
+    color: white;
+  }
+
+  &__input:not(:last-of-type) {
+    margin-bottom: 12px;
+  }
+}

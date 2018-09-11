@@ -1,0 +1,52 @@
+@import "../mixins";
+
+.slider {
+  position: relative;
+  flex-grow: 2;
+  overflow-x: hidden;
+
+  &__content {
+  }
+
+  &__slide {
+  }
+
+  &__arrow {
+    position: absolute;
+    color: white;
+    cursor: pointer;
+    display: none;
+  }
+
+  &__dots {
+    width: 100px;
+    @include flexbox($mainAxis: space-between);
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    bottom: 30px;
+  }
+
+  &__dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+
+  &__dot:hover {
+    background-color: #30454f;
+  }
+
+  &__arrow:hover {
+    color: #8bc34a;
+  }
+
+  &--left {
+    left: 150px;
+  }
+
+  &--right {
+    right: 150px;
+  }
+}

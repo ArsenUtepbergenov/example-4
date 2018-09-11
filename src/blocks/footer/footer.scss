@@ -1,0 +1,59 @@
+@import "../mixins";
+
+.footer {
+  &__content {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__title {
+    color: white;
+    margin: 0;
+    padding: 22px 0 21px 20px;
+  }
+
+  &__text {
+    text-align: center;
+    font-size: 0.79em;
+    line-height: 1.7em;
+  }
+
+  &__buttons {
+    background-color: white;
+    padding: 0 20px;
+    height: 90px;
+    display: flex;
+    position: relative;
+  }
+
+  &__catalog {
+    width: 280px;
+    top: 67px;
+  }
+
+  &__button {
+    margin: auto;
+  }
+
+  &__menu {
+    background-color: var(--color-dark);
+    height: 465px;
+  }
+
+  &__info {
+    height: 482px;
+    background-color: var(--color-grey);
+    padding: 0 20px;
+  }
+
+  &__infoboxes {
+    height: 160px;
+    @include flexbox(column, space-between, flex-start);
+  }
+
+  &__logo {
+    padding: 35px 0 40px 0;
+    display: flex;
+    justify-content: center;
+  }
+}

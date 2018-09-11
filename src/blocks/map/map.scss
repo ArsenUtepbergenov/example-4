@@ -1,0 +1,9 @@
+@import "../variables";
+
+.map {
+  height: 345px;
+
+  @media screen and (min-width: $screen-t) {
+    height: 100%;
+  }
+}

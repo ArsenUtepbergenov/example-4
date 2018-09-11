@@ -1,0 +1,57 @@
+@import "../variables";
+
+.slideshow {
+  position: relative;
+  display: none;
+
+  &__content {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    color: white;
+  }
+
+  &__slide {
+    height: 100%;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  &__arrow {
+    position: absolute;
+    color: white;
+    cursor: pointer;
+  }
+
+  &--left {
+    left: 150px;
+  }
+
+  &--right {
+    right: 150px;
+  }
+
+  &--slide-1 {
+    background-image: url(../assets/slide-1.jpg);
+  }
+
+  &--slide-2 {
+    background-image: url(../assets/slide-2.jpg);
+  }
+
+  &--slide-3 {
+    background-image: url(../assets/slide-3.jpg);
+  }
+
+  @media screen and (min-width: $screen-t) {
+    display: block;
+  }
+}
