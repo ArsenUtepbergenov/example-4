@@ -9,12 +9,8 @@
     left: 50%;
     top: 50%;
     transform: translateX(-50%) translateY(-50%);
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-    text-align: center;
     color: white;
+    width: $screen-t;
   }
 
   &__slide {
@@ -23,20 +19,12 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    position: relative;
   }
 
-  &__arrow {
+  &__text {
+    left: 0;
     position: absolute;
-    color: white;
-    cursor: pointer;
-  }
-
-  &--left {
-    left: 150px;
-  }
-
-  &--right {
-    right: 150px;
   }
 
   &--slide-1 {
@@ -53,5 +41,12 @@
 
   @media screen and (min-width: $screen-t) {
     display: block;
+
+    &--arrows {
+      z-index: 2;
+      left: 50%;
+      transform: translateX(-480px);
+      bottom: 70px;
+    }
   }
 }

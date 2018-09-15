@@ -45,10 +45,8 @@
       border-top: 0;
     }
 
-    &__items {
-      width: $screen-t;
-      @include flexbox($mainAxis: space-around);
-      margin: auto;
+    &__icon {
+      display: none;
     }
   }
 }

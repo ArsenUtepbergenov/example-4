@@ -51,11 +51,54 @@
   }
 
   @media screen and (min-width: $screen-t) {
+    min-height: 575px;
     height: 575px;
 
     &__content {
       margin: auto;
       width: $screen-t;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: relative;
+    }
+
+    &__title {
+      position: absolute;
+      top: 10px;
+    }
+
+    &__articles {
+      width: 475px;
+    }
+
+    &__cover {
+      order: 2;
+      width: 430px;
+      height: 400px;
+    }
+
+    &--star {
+      left: 40px;
+      top: 55px;
+      width: 25px;
+    }
+
+    &--circle {
+      top: 25px;
+      left: 43%;
+      width: 200px;
+      transform: translateX(-50%);
+    }
+
+    &--rect {
+      right: 75px;
+      top: 70px;
+      width: 35px;
+    }
+
+    &--girl {
+      height: 355px;
     }
 
     &__button {

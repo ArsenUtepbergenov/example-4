@@ -35,7 +35,7 @@
 
   @media screen and (min-width: $screen-t) {
     height: 700px;
-    
+
     &__hr {
       display: none;
     }
@@ -60,10 +60,17 @@
     &__buttons {
       width: 342px;
       flex-direction: row;
+      height: 100%;
     }
 
     &__navbar {
       position: relative;
+    }
+
+    &__navbar-items {
+      width: $screen-t;
+      @include flexbox($mainAxis: space-around);
+      margin: auto !important;
     }
 
     &__slider {

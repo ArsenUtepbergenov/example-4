@@ -45,7 +45,7 @@
         <h2 class="footer__title navbar__title">
           <i class="far fa-times-circle fa-lg navbar__close"></i>
         </h2>
-        <ul class="navbar__items">
+        <ul class="navbar__items header__navbar-items">
           <li><a href="#" class="navbar__link">О компании</a></li>
           <li><a href="#" class="navbar__link">Каталог</a></li>
           <li><a href="#" class="navbar__link">Доставка и оплата</a></li>
@@ -57,24 +57,36 @@
         </ul>
       </nav>
       <div class="slideshow header__slider">
-        <div class="slideshow__arrow slideshow--left"><</div>
-        <div class="slideshow__arrow slideshow--right">></div>
+        <div class="arrows slideshow--arrows">
+          <div class="arrows__arrow slideshow--left">
+            <i class="fas fa-angle-left fa-lg arrows__icon"></i>
+          </div>
+          <div class="arrows__arrow slideshow--right">
+            <i class="fas fa-angle-right fa-lg arrows__icon"></i>
+          </div>
+        </div>
         <div class="slideshow__slide slideshow--slide-1">
           <div class="slideshow__content">
-            <p>Найдите новую одежду</p>
-            <span>Обновите ваш гардероб к новому сезону!</span>
+            <div class="slideshow__text">
+              <h1>Найдите новую одежду</h1>
+              <p>Обновите ваш гардероб к новому сезону!</p>
+            </div>
           </div>
         </div>
         <div class="slideshow__slide slideshow--slide-2">
           <div class="slideshow__content">
-            <p>Потеряйте новую одежду</p>
-            <span>Обновите ваш гардероб к новому сезону!</span>
+            <div class="slideshow__text">
+              <h1>Найдите новую одежду</h1>
+              <p>Обновите ваш гардероб к новому сезону!</p>
+            </div>
           </div>
         </div>
         <div class="slideshow__slide slideshow--slide-3">
           <div class="slideshow__content">
-            <p>Найдите новую одежду</p>
-            <span>Обновите ваш гардероб к новому сезону!</span>
+            <div class="slideshow__text">
+              <h1>Найдите новую одежду</h1>
+              <p>Обновите ваш гардероб к новому сезону!</p>
+            </div>
           </div>
         </div>
       </div>
@@ -82,39 +94,68 @@
     <main class="main">
       <section class="catalog">
         <div class="catalog__content">
-
+          <div class="catalog__card">
+            <img src="./assets/catalog-5.png" alt="catalog-1">
+            <span class="catalog__title">Пальто и парки</span>
+          </div>
+          <div class="catalog__card">
+            <img src="./assets/catalog-3.png" alt="catalog-2">
+            <span class="catalog__title">Куртки и дубленки</span>
+          </div>
+          <div class="catalog__card">
+            <img src="./assets/catalog-3.png" alt="catalog-3">
+            <span class="catalog__title">Тренчи</span>
+          </div>
+          <div class="catalog__card">
+            <img src="./assets/catalog-4.png" alt="catalog-4">
+            <span class="catalog__title">Блейзеры</span>
+          </div>
+          <div class="catalog__card">
+            <img src="./assets/catalog-5.png" alt="catalog-5">
+            <span class="catalog__title">Трикотаж</span>
+          </div>
         </div>
         <div class="hr"></div>
       </section>
       <section class="heading">
         <div class="heading__content">
-          <h1>Заголовок H1</h1>
+          <h1 class="heading__title">Заголовок H1</h1>
           <div class="heading__cover">
             <img class="heading__img heading--star" src="./assets/star.png" alt="star">
             <img class="heading__img heading--circle" src="./assets/circle.png" alt="circle">
             <img class="heading__img heading--rect" src="./assets/rect.png" alt="rect">
             <img class="heading__img heading--girl" src="./assets/girl.png" alt="girl">
           </div>
-          <article class="article">
-            Интернет-магазин одежды Stylecloth – это доступные цены, широкий, регулярно обновляемый ассортимент.
-            В онлайн-каталоге Stylecloth представлено около 7000 ведущих брендов женской, мужской и детской одежды и обуви, электроники,
-            книжной продукции, ювелирных изделий, игрушек и т.д. Для удобства пользования онлайн-каталог поделен на разделы, все товары можно сортировать по ряду критериев:
-            цена, материал изготовления, сезонность, бренд.
-          </article>
-          <article class="article article--hiding">
-            Интернет-магазин Stylecloth регулярно проводит масштабные распродажи, в рамках которых купить одежду и обувь становится еще реальнее.
-            Чтобы быть в курсе предстоящих скидок или появления в ассортименте новых моделей одежды от любимых брендов, достаточно подписаться на email-рассылку магазина.
-            Дополнительные выгодные условия действуют для постоянных покупателей Wildberries – персональная скидка, зависящая от процента выкупа вещей.
-          </article>
-          <button type="button" class="button heading__button button--light">Смотреть полностью</button>
+          <div class="heading__articles">
+            <article class="article">
+              Интернет-магазин одежды Stylecloth – это доступные цены, широкий, регулярно обновляемый ассортимент.
+              В онлайн-каталоге Stylecloth представлено около 7000 ведущих брендов женской, мужской и детской одежды и обуви, электроники,
+              книжной продукции, ювелирных изделий, игрушек и т.д. Для удобства пользования онлайн-каталог поделен на разделы, все товары можно сортировать по ряду критериев:
+              цена, материал изготовления, сезонность, бренд.
+            </article>
+            <article class="article article--hiding">
+              Интернет-магазин Stylecloth регулярно проводит масштабные распродажи, в рамках которых купить одежду и обувь становится еще реальнее.
+              Чтобы быть в курсе предстоящих скидок или появления в ассортименте новых моделей одежды от любимых брендов, достаточно подписаться на email-рассылку магазина.
+              Дополнительные выгодные условия действуют для постоянных покупателей Wildberries – персональная скидка, зависящая от процента выкупа вещей.
+            </article>
+            <button type="button" class="button heading__button button--light">Смотреть полностью</button>
+          </div>
         </div>
       </section>
       <section class="bestsellers">
         <div class="bestsellers__content">
+          <div class="bestsellers__fogging bestsellers--left"></div>
+          <div class="bestsellers__fogging bestsellers--right"></div>
           <h2 class="bestsellers__title">Хиты продаж</h2>
+          <div class="arrows slider--arrows">
+            <div class="arrows__arrow slider--left">
+              <i class="fas fa-angle-left fa-lg arrows__icon"></i>
+            </div>
+            <div class="arrows__arrow slider--right">
+              <i class="fas fa-angle-right fa-lg arrows__icon"></i>
+            </div>
+          </div>
           <div class="slider">
-            <div class="slider__arrow slider--left"><</div>
-            <div class="slider__arrow slider--right">></div>
             <div class="slider__slide">
               <div class="slider__content">
                 <div class="card">
@@ -130,6 +171,14 @@
             <div class="slider__slide">
               <div class="slider__content">
                 <div class="card">
+                  <div class="card__tags">
+                    <div class="card__tag">
+                      Хит продаж
+                    </div>
+                    <div class="card__tag">
+                      Акция
+                    </div>
+                  </div>
                   <div class="card__img">
                     <img src="./assets/hit-2.png" alt="hit-2">
                   </div>
@@ -203,7 +252,7 @@
                   <span class="checkbox__checkmark"></span>
                 </label>
               </div>
-              <button type="submit" class="button button--blue">Отправить</button>
+              <button type="submit" class="button form__button button--blue">Отправить</button>
             </form>
           </div>
         </div>
@@ -212,91 +261,96 @@
     <footer class="footer">
       <div class="footer__content">
         <div class="footer__menu">
-          <h2 class="footer__title">Компания</h2>
-          <nav class="navbar">
-            <ul class="navbar__items">
-              <li><a href="#" class="navbar__link">О компании<i class="fas fa-angle-right navbar__icon"></i></a></li>
-              <li><a href="#" class="navbar__link">Каталог<i class="fas fa-ellipsis-v navbar__icon"></i></a></li>
-              <li><a href="#" class="navbar__link">Доставка и оплата<i class="fas fa-angle-right navbar__icon"></i></a></li>
-              <li><a href="#" class="navbar__link">Отзывы<i class="fas fa-angle-right navbar__icon"></i></a></li>
-              <li><a href="#" class="navbar__link">Новости<i class="fas fa-angle-right navbar__icon"></i></a></li>
-              <li><a href="#" class="navbar__link">Статьи<i class="fas fa-angle-right navbar__icon"></i></a></li>
-              <li><a href="#" class="navbar__link">Фотогалерея<i class="fas fa-angle-right navbar__icon"></i></a></li>
-              <li><a href="#" class="navbar__link">Контакты<i class="fas fa-angle-right navbar__icon"></i></a></li>
-            </ul>
-          </nav>
-        </div>
-        <div class="footer__buttons">
-          <button type="button" class="button footer__button button--catalog button--dark">Каталог продукции</button>
-          <nav class="navbar footer__catalog catalog__item navbar--hidden">
-            <ul class="navbar__items">
-              <li><a href="#" class="navbar__link">Пункт №1</a></li>
-              <li><a href="#" class="navbar__link">Пункт №2</a></li>
-              <li><a href="#" class="navbar__link">Пункт №3</a></li>
-              <li><a href="#" class="navbar__link">Пункт №4</a></li>
-              <li><a href="#" class="navbar__link">Пункт №5</a></li>
-              <li><a href="#" class="navbar__link">Пункт №6</a></li>
-              <li><a href="#" class="navbar__link">Пункт №7</a></li>
-              <li><a href="#" class="navbar__link">Пункт №8</a></li>
-            </ul>
-          </nav>
+          <div class="footer__navbar">
+            <h2 class="footer__title">Компания</h2>
+            <nav class="navbar">
+              <ul class="navbar__items">
+                <li><a href="#" class="navbar__link">О компании<i class="fas fa-angle-right navbar__icon"></i></a></li>
+                <li><a href="#" class="navbar__link">Каталог<i class="fas fa-ellipsis-v navbar__icon"></i></a></li>
+                <li><a href="#" class="navbar__link">Доставка и оплата<i class="fas fa-angle-right navbar__icon"></i></a></li>
+                <li><a href="#" class="navbar__link">Отзывы<i class="fas fa-angle-right navbar__icon"></i></a></li>
+                <li><a href="#" class="navbar__link">Новости<i class="fas fa-angle-right navbar__icon"></i></a></li>
+                <li><a href="#" class="navbar__link">Статьи<i class="fas fa-angle-right navbar__icon"></i></a></li>
+                <li><a href="#" class="navbar__link">Фотогалерея<i class="fas fa-angle-right navbar__icon"></i></a></li>
+                <li><a href="#" class="navbar__link">Контакты<i class="fas fa-angle-right navbar__icon"></i></a></li>
+              </ul>
+            </nav>
+          </div>
+          <div class="footer__buttons">
+            <h2 class="footer__title footer--hidden">Компания</h2>
+            <button type="button" class="button footer__button button--catalog button--dark">Каталог продукции</button>
+            <nav class="navbar footer__catalog catalog__item navbar--hidden">
+              <ul class="navbar__items">
+                <li><a href="#" class="navbar__link">Пункт №1</a></li>
+                <li><a href="#" class="navbar__link">Пункт №2</a></li>
+                <li><a href="#" class="navbar__link">Пункт №3</a></li>
+                <li><a href="#" class="navbar__link">Пункт №4</a></li>
+                <li><a href="#" class="navbar__link">Пункт №5</a></li>
+                <li><a href="#" class="navbar__link">Пункт №6</a></li>
+                <li><a href="#" class="navbar__link">Пункт №7</a></li>
+                <li><a href="#" class="navbar__link">Пункт №8</a></li>
+              </ul>
+            </nav>
+          </div>
         </div>
         <div class="footer__info">
-          <div class="footer__logo">
-            <div class="logo"></div>
+          <div class="footer__info-content">
+            <div class="footer__logo">
+              <div class="logo"></div>
+            </div>
+            <div class="footer__infoboxes">
+              <div class="infobox">
+                <div class="infobox__icon">
+                  <i class="fas fa-phone-volume fa-2x"></i>
+                </div>
+                <div class="infobox__text">
+                  <span>+7 (000) 000-00-00</span>
+                  <span>+7 (000) 000-00-00</span>
+                </div>
+              </div>
+              <div class="infobox">
+                <div class="infobox__icon">
+                  <i class="far fa-clock fa-2x"></i>
+                </div>
+                <div class="infobox__text">
+                  <span>Пн-Пт: с 0:00 до 0:00</span>
+                  <span>Сб-Вс: Выходные</span>
+                </div>
+              </div>
+              <div class="infobox">
+                <div class="infobox__icon">
+                  <i class="fas fa-map-marker-alt fa-2x"></i>
+                </div>
+                <div class="infobox__text">
+                  <span>000000, Рыбная обл., г. Рыба, ул. Рыба,</span>
+                  <span>дом 00, к. 00  <a href="#" class="form__link">Карта проезда</a></span>
+                </div>
+              </div>
+            </div>
+            <div class="hr"></div>
+            <div class="social-icons">
+              <div class="social-icons__circle">
+                <i class="fab fa-vk social-icons__icon social-icons--vk"></i>
+              </div>
+              <div class="social-icons__circle">
+                <i class="fab fa-twitter social-icons__icon social-icons--twitter"></i>
+              </div>
+              <div class="social-icons__circle">
+                <i class="fab fa-facebook-f social-icons__icon social-icons--facebook"></i>
+              </div>
+              <div class="social-icons__circle">
+                <i class="fab fa-google-plus-g social-icons__icon social-icons--google-plus"></i>
+              </div>
+              <div class="social-icons__circle">
+                <i class="fab fa-instagram social-icons__icon social-icons--instagram"></i>
+              </div>
+            </div>
+            <p class="footer__text">
+               Создание и продвижение сайта <a href="#" class="form__link">Darvin Studio</a><br>
+               <a href="#" class="form__link">Политика конфиденциальности</a><br>
+               <i class="far fa-copyright"></i> 2017. Все права защищены
+             </p>
           </div>
-          <div class="footer__infoboxes">
-            <div class="infobox">
-              <div class="infobox__icon">
-                <i class="fas fa-phone-volume fa-2x"></i>
-              </div>
-              <div class="infobox__text">
-                <span>+7 (000) 000-00-00</span>
-                <span>+7 (000) 000-00-00</span>
-              </div>
-            </div>
-            <div class="infobox">
-              <div class="infobox__icon">
-                <i class="far fa-clock fa-2x"></i>
-              </div>
-              <div class="infobox__text">
-                <span>Пн-Пт: с 0:00 до 0:00</span>
-                <span>Сб-Вс: Выходные</span>
-              </div>
-            </div>
-            <div class="infobox">
-              <div class="infobox__icon">
-                <i class="fas fa-map-marker-alt fa-2x"></i>
-              </div>
-              <div class="infobox__text">
-                <span>000000, Рыбная обл., г. Рыба, ул. Рыба,</span>
-                <span>дом 00, к. 00  <a href="#" class="form__link">Карта проезда</a></span>
-              </div>
-            </div>
-          </div>
-          <div class="hr"></div>
-          <div class="social-icons">
-            <div class="social-icons__circle">
-              <i class="fab fa-vk social-icons__icon social-icons--vk"></i>
-            </div>
-            <div class="social-icons__circle">
-              <i class="fab fa-twitter social-icons__icon social-icons--twitter"></i>
-            </div>
-            <div class="social-icons__circle">
-              <i class="fab fa-facebook-f social-icons__icon social-icons--facebook"></i>
-            </div>
-            <div class="social-icons__circle">
-              <i class="fab fa-google-plus-g social-icons__icon social-icons--google-plus"></i>
-            </div>
-            <div class="social-icons__circle">
-              <i class="fab fa-instagram social-icons__icon social-icons--instagram"></i>
-            </div>
-          </div>
-          <p class="footer__text">
-             Создание и продвижение сайта <a href="#" class="form__link">Darvin Studio</a><br>
-             <a href="#" class="form__link">Политика конфиденциальности</a><br>
-             <i class="far fa-copyright"></i> 2017. Все права защищены
-           </p>
         </div>
       </div>
     </footer>

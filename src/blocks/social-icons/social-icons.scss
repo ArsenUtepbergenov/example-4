@@ -1,4 +1,5 @@
 @import "../mixins";
+@import "../variables";
 
 .social-icons {
   @include flexbox($mainAxis: space-between);
@@ -33,5 +34,9 @@
 
   &--twitter {
     color: #00c9f3;
+  }
+
+  @media screen and (min-width: $screen-t) {
+    width: 230px;
   }
 }

@@ -1,22 +1,10 @@
 @import "../mixins";
+@import "../variables";
 
 .slider {
   position: relative;
   flex-grow: 2;
   overflow-x: hidden;
-
-  &__content {
-  }
-
-  &__slide {
-  }
-
-  &__arrow {
-    position: absolute;
-    color: white;
-    cursor: pointer;
-    display: none;
-  }
 
   &__dots {
     width: 100px;
@@ -38,15 +26,28 @@
     background-color: #30454f;
   }
 
-  &__arrow:hover {
-    color: #8bc34a;
+  &--arrows {
+    display: none;
   }
 
-  &--left {
-    left: 150px;
-  }
+  @media screen and (min-width: $screen-t) {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
 
-  &--right {
-    right: 150px;
+    &__dots {
+      display: none;
+    }
+
+    &__slide {
+      display: block;
+    }
+
+    &--arrows {
+      display: flex;
+      top: 25px;
+      right: 50%;
+      transform: translateX(480px);
+    }
   }
 }

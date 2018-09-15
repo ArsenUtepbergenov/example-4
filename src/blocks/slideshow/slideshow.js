@@ -12,7 +12,7 @@ function resetSlideshow() {
 function switchSlides(direction) {
   currSlide += direction;
   resetSlideshow();
-  if (currentSlide < 0)
+  if (currSlide < 0)
     currSlide = slideshowSlides.length - 1;
   if (currSlide > slideshowSlides.length - 1)
     currSlide = 0;

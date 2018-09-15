@@ -1,0 +1,26 @@
+.arrows {
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  width: 100px;
+
+  &__arrow {
+    color: var(--color-blue);
+    cursor: pointer;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background-color: white;
+    z-index: 2;
+    display: flex;
+  }
+
+  &__icon {
+    margin: auto;
+  }
+
+  &__arrow:hover {
+    color: white;
+    background-color: var(--color-blue);
+  }
+}

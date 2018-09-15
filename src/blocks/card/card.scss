@@ -4,6 +4,27 @@
   background-color: white;
   border-radius: 3px;
   box-shadow: 0px 2px 3px 1px #b9b9b9;
+  position: relative;
+
+  &__tags {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    height: 100%;
+  }
+
+  &__tag {
+    height: 20px;
+    line-height: 20px;
+    background-color: black;
+    color: white;
+    text-transform: uppercase;
+    font-size: 0.8em;
+    text-align: center;
+    padding: 5px 7px;
+    margin: 10px 0;
+  }
 
   &__img {
     padding: 35px 0 15px 0;

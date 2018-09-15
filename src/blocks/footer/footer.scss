@@ -1,4 +1,5 @@
 @import "../mixins";
+@import "../variables";
 
 .footer {
   &__content {
@@ -35,7 +36,7 @@
     margin: auto;
   }
 
-  &__menu {
+  &__navbar {
     background-color: var(--color-dark);
     height: 465px;
   }
@@ -55,5 +56,69 @@
     padding: 35px 0 40px 0;
     display: flex;
     justify-content: center;
+  }
+
+  &--hidden {
+    display: none;
+  }
+
+  @media screen and (min-width: $screen-t) {
+    height: 500px;
+
+    &__logo {
+      justify-content: flex-start;
+    }
+
+    &__content {
+      flex-direction: row;
+      height: 100%;
+    }
+
+    &__buttons {
+      background-color: var(--color-dark);
+      padding: 0;
+      height: 100%;
+      display: block;
+    }
+
+    &__menu {
+      order: 2;
+      height: 100%;
+      width: 60%;
+      display: flex;
+      background-color: var(--color-dark);
+      align-items: center;
+      justify-content: flex-start;
+      padding-left: 80px;
+      box-sizing: border-box;
+    }
+
+    &__navbar {
+      height: 100%;
+      width: 200px;
+      margin-right: 70px;
+    }
+
+    &__info {
+      height: 100%;
+      width: 40%;
+    }
+
+    &__info-content {
+      width: 300px;
+      float: right;
+    }
+
+    &__catalog {
+      top: 0;
+    }
+
+    &__text {
+      text-align: left;
+    }
+
+    &--hidden {
+      display: block;
+    }
   }
 }

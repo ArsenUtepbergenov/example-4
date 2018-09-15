@@ -18,6 +18,18 @@ function reset() {
   }
 }
 
+function reset() {
+  for (slide of slides) {
+    slide.style.display = 'none';
+  }
+}
+
+function restore() {
+  for (slide of slides) {
+    slide.style.display = 'block';
+  }
+}
+
 function resetDots() {
   for (dot of dots) {
     dot.style.backgroundColor = '#88a0ab';
@@ -46,7 +58,12 @@ function setCurrent(current) {
   dots[currentSlide].style.backgroundColor = '#30454f';
 }
 
-switchSlide(0);
+function run() {
+  if (window.screen.width <= 960)
+    switchSlide(0);
+}
+
+run();
 
 arrowLeft.addEventListener('click', () => {
   switchSlide(-1);
@@ -63,4 +80,12 @@ sliderDots.addEventListener('click', event => {
     return;
 
   setCurrent(getElementIndex(target));
+});
+
+window.addEventListener('resize', () => {
+  if (window.screen.width >= 960) {
+    restore();
+  }
+  else {}
+    switchSlide(0);
 });
